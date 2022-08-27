@@ -1,0 +1,95 @@
+//CSCI 1550: HW1, Problem 6
+//Filename: hw1pr6.txt
+//Name: Peter Morales
+//
+//Exercise #1 Sock Sorting (plain-English)
+
+We will need:
+
+    Laundry items - 
+        Basket
+    
+    Clothing Items - 
+        Socks
+
+How to sort laundry itmes:
+    
+    Instructions - 
+        Step 1: Grab basket full of socks
+        Step 2: Dump socks on top of folding area
+        Step 3: Seperate socks into piles by similar patterns or types
+        Step 4: Look at piles individually and further pair into identical patterns or types
+        Step 5: Fold matching pairs that were identified
+        Step 6: Put folded socks away
+        Step 7: Put basket away
+
+
+
+//Exercise #1 Sock Sorting (pseudocode)
+
+#include laundry
+// pseudocode intent: to include a library in which common items related to laundry will be enabled
+// for use in the program.
+
+// declarations
+basket myBasket
+socks mySocks
+sort sortSocks
+
+//initializations
+mySocks = ankle or calf
+myBasket = mySocks
+
+//function that sorts socks into pairs by type
+sortSocks = laundry.sort(myBasket)
+
+return 0;
+
+
+
+
+//Exercise #2: From decimal to binary! (plain-English)
+
+Get number:
+    Request user to input a number
+
+Convert decimal number into binary-
+
+    Input number into binary converter function:
+        Divide number by 2
+        Store value as an integer
+        If there is a remainder store as a 1
+        If number divides evenly store as a 0
+        If no longer able to divide by 2, output 1 and end function
+
+Output binary:
+    Put binary number to console
+
+
+//Exercise #2: From decimal to binary! (pseudocode)
+
+//libraries that will be useful such as input/output and common math operators
+include iostream
+include math 
+
+//declarations
+int x
+
+//initializations
+x = get next input
+array = converter
+
+//function
+converter{
+    if x > 0 then divide by 2
+        else return 0;
+    if there is a remainder store in array as 1
+        else store as a 0;
+    if reduced to 1 store as 1;
+}
+
+//use function to output binary
+array = converter(x)
+
+//output results
+print array
